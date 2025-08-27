@@ -13,9 +13,11 @@ let finalPrice;
 if (age < 18) {
     finalPrice = tempPrice * 0.8;
 }
-
-if (age > 65) {
+else if(age > 65) {
     finalPrice = tempPrice * 0.6;
+}
+else {
+    finalPrice = tempPrice;
 }
 
 let formatResult = finalPrice.toFixed(2);
